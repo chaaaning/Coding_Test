@@ -16,6 +16,7 @@ queue = deque([[cur_x, cur_y]])
 count_q = deque([1])
 counting_num = 1
 graph[cur_x][cur_y] = counting_num
+
 while queue:
     counting_num = count_q.popleft()
     can_loc = queue.popleft()
@@ -32,8 +33,4 @@ while queue:
                 
     if graph[n-1][m-1] != 1: break
                 
-
-print()
-for i in range(n):
-    print(graph[i])
 print(graph[n-1][m-1])
