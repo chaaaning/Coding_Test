@@ -36,5 +36,3 @@ for combination in available_chicken:
     chicken_dists.append(total_min)
 
 print(min(chicken_dists))
-
-# print(available_chicken)
